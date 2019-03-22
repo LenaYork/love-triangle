@@ -27,7 +27,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
 };*/
      
      
-     if ((spenochee2 === index + 1) && (spenochee1 !== spenochee2)) triangles++;
+     if (spenochee2 === index + 1 && spenochee1 !== spenochee2) triangles++;
   });
   return (triangles / 3).toFixed(0);
 };
