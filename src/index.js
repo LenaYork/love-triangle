@@ -15,10 +15,6 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
                triangles++;
              } 
         }
-  }//return triangle > 0 ? triangle/3 : 0;
-  
-   if (triangles > 0) {
-   return triangles / 3;
-   } else return 0;
- // return result;
+  }
+  return triangles > 0 ? triangles/3 : 0;
 };
