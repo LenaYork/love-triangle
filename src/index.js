@@ -4,6 +4,7 @@
  */
 module.exports = function getLoveTrianglesCount(preferences = []) {
   // your implementation
+  if  (preferences.length < 2) return 0;
   let triangles = 0;
   for (let i = 0; i < preferences.length; i++) {
         let spenochee1 = i+1;
@@ -17,7 +18,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
   }//return triangle > 0 ? triangle/3 : 0;
   
    if (triangles > 0) {
-    let resut = triangles / 3;
-   } else result = 0;
-  return result;
+   return triangles / 3;
+   } else return 0;
+ // return result;
 };
